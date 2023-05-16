@@ -1,0 +1,112 @@
+body{
+    background-color: #D5E8F2;
+}
+.main {
+    display: flex;
+    margin: 100px 40px 0 40px;
+}
+
+#loader{
+    width: 100%;
+    height: 10vh;
+    background: url('./icons/loader_icon.svg') no-repeat center;
+    z-index: 999;
+    display: none;
+    }
+
+img{
+    width:400px
+}
+
+.product_image{
+    position: relative;
+    z-index: 1;
+}
+
+.product-details{
+    padding-left: 200px;
+}
+
+.product_description{
+    /* font-weight: bold; */
+    font-size: 200%;
+
+}
+
+.button{
+    border-radius: 90%;
+    padding: 10px 10px;
+    box-shadow: none;
+    border: none;
+}
+
+.button-blue{
+    background-color: #1EAAE7;
+}
+
+.button-pink{
+    background-color: pink;
+}
+
+.button-yellow{
+    background-color: yellow;
+}
+
+.product-customization{
+
+}
+
+.upload-button{
+    width: 355px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #1EAAE7;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#button-text {
+    cursor: pointer;
+    margin-left: 60px;
+}
+
+.icon{
+    width: 24px;
+    height: 24px;
+	margin-right: 16px;
+    margin-left: 16px;
+}
+
+.logo{
+    position: relative;
+    width: 24px;
+    display: none;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+label{
+    display: flex;
+    align-items: center;
+}
+
+#image{
+    position: relative;
+    z-index: 1;
+}
+
+#logo-img{
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+    height: 20px;
+}

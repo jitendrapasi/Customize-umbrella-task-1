@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Umbrella</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body id="body">
+    <div class="main">
+      <div class="product_image">
+        <img id="image" src="./images/Blue umbrella.png" alt="blue Umbrella" />
+        <img id="logo-img" class="logo" src="" alt=" " />
+      </div>
+      <div class="product-details">
+        <div class="product_description">
+          <h2>Custom Umbrella</h2>
+          <button onclick="blue()" class="button button-blue"></button>
+          <button onclick="pink()" class="button button-pink"></button>
+          <button onclick="yellow()" class="button button-yellow"></button>
+        </div>
+        <div class="product-customization">
+          <h4>Customize your umbrella</h4>
+          <p>Upload a logo for instant preview.</p>
+          <p>.png and .jpg files only. Max file size is 5mb</p>
+
+          <div id="upload-button" class="upload-button">
+            <label>
+              <input
+                type="file"
+                id="file"
+                accept="image/png, image/jpg"
+                onchange="previewImage()"
+              />
+              <img class="icon" src="./icons/upload_icon.svg" alt="" />
+              <span id="button-text">UPLOAD LOGO</span>
+            </label>
+            <img
+              class="icon"
+              src="./icons/cancel.svg"
+              alt=""
+              onclick="clearLogo()"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./myscript.js"></script>
+  </body>
+</html>
